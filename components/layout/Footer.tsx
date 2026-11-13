@@ -1,40 +1,24 @@
-
-import { Terminal, Code2 } from "lucide-react";
+import { Code2 } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="footer">
-      <div className="container footer-inner">
-        <span>
-          <Terminal
-            size={13}
-            style={{
-              display: "inline",
-              verticalAlign: "middle",
-              marginRight: 7,
-            }}
-          />
-          noel@dev:~$ exit
+    <footer className="ft-bar">
+      <div className="container ft-inner">
+        <span className="ft-cmd">
+          <span className="ft-prompt">{">_ noel@dev:~$"}</span> exit
         </span>
 
-        <span>
+        <span className="ft-note">
           Built with Next.js, TypeScript, and curiosity.
         </span>
 
         <a
+          className="ft-link"
           href="https://github.com/neoleio"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Visit my GitHub profile"
         >
-          <Code2
-            size={14}
-            style={{
-              display: "inline",
-              verticalAlign: "middle",
-              marginRight: 6,
-            }}
-          />
+          <Code2 size={15} aria-hidden="true" />
           GitHub
         </a>
       </div>
