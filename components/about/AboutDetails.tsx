@@ -41,7 +41,7 @@ export default function AboutDetails() {
           <span className="abt-profile-kicker">{"noel@dev:~$ whoami"}</span>
           <h3>Noel Jr. Sipin</h3>
           <p className="abt-role">
-            Full-stack developer · Computer Science student
+                        Full-stack developer · Computer Science (Cybersecurity)
           </p>
           <p>
             I build practical web applications for businesses and explore

@@ -10,32 +10,43 @@ export type ProfileItem = {
 };
 
 export const profile = {
-  education: [
+    education: [
     {
-      title: "Bachelor of Science in Computer Science",
-      // Optional: add your school or expected year, for example:
-      // detail: "School name · Expected 2027",
+      title: "BS in Computer Science (Cybersecurity)",
+      detail: "Trimex Colleges Biñan · Ongoing",
+    },
+    {
+      title: "Diploma in Computer and Network Administration",
+      detail: "International Electronics and Technical Institute · 2021",
     },
   ] as ProfileItem[],
 
   experience: [
     {
-      title: "Sales & Marketing Staff",
+      title: "Freelance Full-Stack Web Developer",
+      detail: "2026 – Present",
+    },
+    {
+      title: "Sales and Marketing Staff",
       detail: "February 2021 – April 2026",
+    },
+    {
+      title: "Student Assistant, IETI College",
+      detail: "2018 – 2020",
     },
   ] as ProfileItem[],
 
   interests: [
     { title: "Full-stack web development" },
     { title: "Databases and backend systems" },
-    { title: "Linux and computer networking" },
-    { title: "Cybersecurity fundamentals" },
+    { title: "Networking and Linux" },
+    { title: "Security operations (SOC) and SIEM fundamentals" },
   ] as ProfileItem[],
 
   goals: [
     { title: "Keep shipping practical web applications" },
     { title: "Build hands-on cybersecurity lab experience" },
-    { title: "Work toward junior SOC analyst skills" },
+    { title: "Land an entry-level IT support, network support, or SOC analyst role" },
     { title: "Document what I build and learn" },
   ] as ProfileItem[],
 

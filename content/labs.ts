@@ -36,30 +36,35 @@ export const labTracks: LabTrack[] = [
     id: "networking",
     title: "Networking",
     icon: "network",
-    status: "learning",
+    status: "practicing",
     description:
-      "Understanding how devices communicate and how to troubleshoot connectivity.",
-    topics: ["IP addressing", "DNS", "TCP/IP", "Troubleshooting"],
-    tools: [],
+      "Understanding how devices communicate, configuring them, and troubleshooting connectivity.",
+    topics: [
+      "IPv4 subnetting",
+      "ARP, DNS and DHCP",
+      "Device configuration",
+      "Troubleshooting",
+    ],
+    tools: ["Cisco IOS"],
   },
   {
     id: "linux",
     title: "Linux",
     icon: "linux",
-    status: "learning",
+    status: "practicing",
     description:
-      "Working comfortably in the command line and understanding system basics.",
-    topics: ["Commands", "Permissions", "Users and groups", "Administration"],
-    tools: [],
+      "Working in the command line and securing systems in a Kali Linux lab.",
+    topics: ["Commands", "Firewall rules", "System logs", "Administration"],
+    tools: ["Kali Linux", "Ubuntu", "UFW"],
   },
   {
     id: "recon",
     title: "Reconnaissance",
     icon: "recon",
-    status: "learning",
+    status: "practicing",
     description:
-      "Learning how to discover hosts and services in controlled lab environments.",
-    topics: ["Port scanning", "Service identification", "Enumeration"],
+      "Discovering hosts and services in controlled lab environments.",
+    topics: ["Port scanning", "Service identification", "Network access control"],
     tools: ["Nmap"],
   },
   {
@@ -76,11 +81,11 @@ export const labTracks: LabTrack[] = [
     id: "traffic",
     title: "Traffic Analysis",
     icon: "traffic",
-    status: "learning",
+    status: "practicing",
     description:
-      "Reading network captures to understand how protocols behave.",
-    topics: ["DNS traffic", "TCP handshakes", "HTTP and HTTPS"],
-    tools: ["Wireshark"],
+      "Reading network captures and monitoring traffic to understand how protocols behave.",
+    topics: ["Packet capture", "Wireless security", "Security monitoring"],
+    tools: ["Wireshark", "tcpdump"],
   },
 ];
 
@@ -91,13 +96,13 @@ export const labTracks: LabTrack[] = [
   have permission to test. Never include credentials, tokens, or private IPs.
 
   {
-    slug: "juice-shop-login-analysis",
-    title: "Analyzing the Juice Shop login request",
-    trackId: "web",
+    slug: "kali-network-security-lab",
+    title: "Network Security Lab (Kali Linux)",
+    trackId: "recon",
     date: "2026-11-20",
     objective: "What you set out to learn.",
-    environment: "e.g. OWASP Juice Shop running locally in Docker",
-    tools: ["Burp Suite Community"],
+    environment: "Kali Linux (academic project)",
+    tools: ["Nmap", "UFW", "Wireshark", "tcpdump"],
     steps: ["What you did, step by step."],
     findings: ["What you observed."],
     lessons: ["What you learned."],
