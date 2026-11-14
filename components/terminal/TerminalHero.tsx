@@ -41,7 +41,7 @@ const commandResponses: Record<string, string> = {
     "FEATURED PROJECTS\n-----------------\n01. K-Tech - Repair shop management system\n02. ProFix - Gadget repair management system\n03. Banahaw Spa - Business website\n04. Lark Paper Products - Business website\n\nScroll to ./projects to explore them.",
 
   skills:
-    "DEVELOPMENT: React, JavaScript, Node.js, Next.js\nDATABASES: PostgreSQL, Neon, Supabase, SQL\nINFRASTRUCTURE: Linux, Networking, Git, Vercel\nSECURITY: Nmap, Wireshark, Burp Suite, Security Labs",
+    "DEVELOPMENT: React, JavaScript, Node.js, Next.js\nDATABASES: PostgreSQL, Neon, Supabase, SQL\nINFRASTRUCTURE: Linux, Networking, Git, Vercel\nSECURITY: Nmap, Wireshark, \nAI TOOLS: Claude, ChatGPT, Gemini, GitHub Copilot",
 
   focus:
     "CURRENT OBJECTIVES\n-------------------\n[01] Improve full-stack development\n[02] Strengthen Linux fundamentals\n[03] Practice networking concepts\n[04] Build cybersecurity lab experience\n[05] Document technical projects",

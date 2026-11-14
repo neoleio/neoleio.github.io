@@ -45,8 +45,11 @@ export default function AboutDetails() {
           </p>
           <p>
             I build practical web applications for businesses and explore
-            cybersecurity through hands-on, controlled labs. I document what
-            I build, what I learn, and the problems I solve along the way.
+            cybersecurity through hands-on, controlled labs. I use AI tools
+            such as Claude, ChatGPT, Gemini, and GitHub Copilot as
+            development assistants for coding, debugging, database design,
+            and documentation. I document what I build, what I learn, and
+            the problems I solve along the way.
           </p>
         </div>
       </div>

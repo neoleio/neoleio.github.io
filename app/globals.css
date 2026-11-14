@@ -1902,3 +1902,9 @@ main {
     transform: none;
   }
 }
+/* Skills: let the last panel (AI Tools) span the full row */
+@media (min-width: 721px) {
+  .skills-grid > :last-child {
+    grid-column: 1 / -1;
+  }
+}

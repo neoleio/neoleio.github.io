@@ -5,6 +5,7 @@ import {
   Database,
   Network,
   ShieldCheck,
+  Sparkles,
 } from "lucide-react";
 
 import Reveal from "@/components/ui/Reveal";
@@ -75,6 +76,11 @@ const skillGroups = [
       "Splunk (in training)",
       "Microsoft Sentinel (in training)",
     ],
+  },
+  {
+    title: "AI Tools",
+    icon: Sparkles,
+    skills: ["Claude", "ChatGPT", "Gemini", "GitHub Copilot"],
   },
 ];
 
