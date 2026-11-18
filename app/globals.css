@@ -1338,6 +1338,12 @@ main {
   color: #39e58c;
 }
 
+.nav-menu {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
 .nav-links {
   display: flex;
   align-items: center;

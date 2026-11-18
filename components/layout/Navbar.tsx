@@ -33,18 +33,18 @@ export default function Navbar() {
           noel@dev
         </a>
 
-        <button
-          type="button"
-          className="nav-toggle"
-          onClick={() => setOpen((value) => !value)}
-          aria-expanded={open}
-          aria-controls="primary-nav"
-          aria-label={open ? "Close menu" : "Open menu"}
-        >
-          {open ? <X size={20} /> : <Menu size={20} />}
-        </button>
+        <nav className="nav-menu" aria-label="Primary">
+          <button
+            type="button"
+            className="nav-toggle"
+            onClick={() => setOpen((value) => !value)}
+            aria-expanded={open}
+            aria-controls="primary-nav"
+            aria-label={open ? "Close menu" : "Open menu"}
+          >
+            {open ? <X size={20} /> : <Menu size={20} />}
+          </button>
 
-        <nav aria-label="Primary">
           <ul className="nav-links" id="primary-nav" data-open={open}>
             {links.map((link) => (
               <li key={link.href}>

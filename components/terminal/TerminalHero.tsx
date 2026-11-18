@@ -69,6 +69,7 @@ export default function TerminalHero() {
   const [showIntro, setShowIntro] = useState(true);
 
   const shouldReduceMotion = useReducedMotion();
+  const isBootComplete = bootComplete || shouldReduceMotion;
   const outputRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const nextId = useRef(0);
@@ -76,7 +77,6 @@ export default function TerminalHero() {
   // Simulated terminal boot sequence
   useEffect(() => {
     if (shouldReduceMotion) {
-      setBootComplete(true);
       return;
     }
 
@@ -99,7 +99,7 @@ export default function TerminalHero() {
     if (outputRef.current) {
       outputRef.current.scrollTop = outputRef.current.scrollHeight;
     }
-  }, [history, bootComplete]);
+  }, [history, isBootComplete]);
 
   function executeCommand(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -212,7 +212,7 @@ export default function TerminalHero() {
         onClick={() => inputRef.current?.focus()}
         aria-label="Interactive simulated portfolio terminal"
       >
-        {!bootComplete ? (
+        {!isBootComplete ? (
           <div className="terminal-output boot-sequence" aria-live="polite">
             {bootLines.map((line, index) => (
               <motion.div
